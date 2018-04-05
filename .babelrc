@@ -3,5 +3,8 @@
     "@babel/env",
     "@babel/react",
     "@babel/stage-0"
+  ],
+  "plugins": [
+    "emotion"
   ]
 }
