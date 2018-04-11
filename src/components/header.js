@@ -5,8 +5,10 @@ import logo from '../assets/logo.jpg';
 // Using javascript objects
 const Wrapper = styled.div({
   padding: 0,
-  margin: 0,
+  margin: '0px auto',
   color: 'white',
+  width: 1024,
+  position: 'relative',
 });
 
 const Logo = styled.div({
@@ -19,18 +21,38 @@ const Logo = styled.div({
 });
 
 // With tagged template literals (writing plain css)
-const Menu = styled.nav`
-  margin-top: 8px;
-  background-color: red;
-`;
+const Menu = styled.div({
+  float: 'right',
+  padding: 0,
+  margin: '25px 0 0 0 ',
+});
 
+const MenuLink = styled.div({
+  position: 'relative',
+  display: 'inline-block',
+  margin: '0 0 0 15px',
+});
 const Header = () => (
   <Wrapper>
     <Logo>
       <img src={logo} />
     </Logo>
     <Menu>
-      <a href="/home">Home</a>
+      <MenuLink>
+        <a href="#work">work</a>
+      </MenuLink>
+      <MenuLink>
+        <a href="#about">about</a>
+      </MenuLink>
+      <MenuLink>
+        <a href="">#30in30</a>
+      </MenuLink>
+      <MenuLink>
+        <a href="">GitHub</a>
+      </MenuLink>
+      <MenuLink>
+        <a href="#contact">contact</a>
+      </MenuLink>
     </Menu>
   </Wrapper>
 );
