@@ -3,7 +3,7 @@ import {injectGlobal} from 'react-emotion';
 export default () => {
   injectGlobal({
     a: {
-      textDecoration: 'inherit',
+      textDecoration: 'underline',
       color: 'inherit',
     },
   });

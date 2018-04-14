@@ -6,7 +6,6 @@ import logo from '../assets/logo.jpg';
 const Wrapper = styled.div({
   padding: 0,
   margin: '0px auto',
-  color: 'white',
   width: 1024,
   position: 'relative',
   borderBottom: '1px solid #e9e9e9',
