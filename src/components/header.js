@@ -9,6 +9,8 @@ const Wrapper = styled.div({
   color: 'white',
   width: 1024,
   position: 'relative',
+  borderBottom: '1px solid #e9e9e9',
+  minHeight: 85,
 });
 
 const Logo = styled.div({
@@ -24,7 +26,10 @@ const Logo = styled.div({
 const Menu = styled.div({
   float: 'right',
   padding: 0,
-  margin: '25px 0 0 0 ',
+  margin: '35px 0 0 0 ',
+  color: '#000',
+  textDecoration: 'none',
+  fontFamily: 'sans-serif, helvetica, arial',
 });
 
 const MenuLink = styled.div({
